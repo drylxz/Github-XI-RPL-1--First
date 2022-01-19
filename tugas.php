@@ -1,48 +1,54 @@
 <?php
-echo "<h2>Perulangan While</h2>";
-$x = 1;
-while($x <= 5) {
-    echo "Nomor: $x <br>";
+echo "While<br>";
+echo "Contoh 1<br>";
+$x = 1; 
+ 
+while($x <= 10) {
+    echo "Angka $x <br>";
     $x++;
+} 
+echo "<br>";
+echo "Contoh 2<br>";
+$i=1;
+while ($i <= 10)
+{
+  echo "$i";
+  echo "<br />";
+  $i=$i+1;
 }
 echo "<br>";
-$i=50;
+echo "Contoh 3<br>";
+$i=100;
 while ($i >= 0)
 {
    echo "$i";
    echo "<br />";
-   $i-=10;
+   $i-=8;
 }
 echo "<br>";
-$i = 5;
-while($i > 0)
+echo "DoWhile<br>";
+echo "Contoh 1<br>";
+$x = 1;
+do {
+    echo "Do While: $x <br>";
+    $x++;
+} while($x <= 5);
+echo "<br>";
+echo "Contoh 2<br>";
+$i=1000;
+do
 {
-	echo $i;
-	echo "<br/>";
-	$i--;
-}
-echo "<h2>Perulangan DoWhile</h2>";
+  echo "$i";
+  echo " Akan tampil di browser<br>";
+  $i=$i+1;
+} while ($i <= 10);
+echo "<br>";
+echo "Contoh 3<br>";
 $i=1;
 do
 {
   echo "$i";
-  echo "<br />";
-  $i++;
-} while ($i <= 5);
-echo "<br>";
-$i=5;
-do
-{
-  echo "$i";
-  echo "<br />";
-  $i--;
-} while ($i >= 1);
-echo "<br>";
-$i=1;
-do
-{
-  echo "Nomor $i";
   echo "<br />";
   $i=$i+1;
-} while ($i <= 5);
+} while ($i <= 10);
 ?>
